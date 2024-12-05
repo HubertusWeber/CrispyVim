@@ -2,6 +2,9 @@
   :lazy true
   :event [:BufRead :BufNewFile]
   :build :TSUpdate
+  :init (fn []
+          (tset (require :nvim-treesitter.install) :compilers
+                [:clang :zig :cc :gcc]))
   :main :nvim-treesitter.configs
   :opts {:ensure_installed [:fennel
                             :lua
