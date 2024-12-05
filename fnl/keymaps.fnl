@@ -75,7 +75,6 @@
 (map [:n :x] :gL :L opts)
 (map [:n :x] :N "<C-d>zz" opts)
 (map [:n :x] :E "<C-u>zz" opts)
-(map :n "<leader>q" _G.vim.diagnostic.setloclist {:desc "Quickfix"})
 (map :n "<leader>d" "<CMD>bdelete<CR>" {:desc "Delete buffer"})
 (map :n "<leader>D" "<CMD>bdelete!<CR>" {:desc "Delete buffer!"})
 (map :n "<leader>n" "<CMD>bnext<CR>" {:desc "Next buffer"})
@@ -91,8 +90,8 @@
 ;; Window commands
 (map [:n :x] "<leader>k" "<CMD>new<CR>" {:desc "Split —"})
 (map [:n :x] "<leader>h" "<CMD>vnew<CR>" {:desc "Split |"})
-(map [:n :x] "<leader>x" "<C-w>q" {:desc "Close window"})
-(map [:n :x] "<leader>X" "<C-w>o" {:desc "Close others"})
+(map [:n :x] "<leader>q" "<C-w>q" {:desc "Close window"})
+(map [:n :x] "<leader>Q" "<C-w>o" {:desc "Close others"})
 (map [:n :x] "<leader>w" "<C-w>w" {:desc "Switch window"})
 (map [:n :x] "<leader>v" "<C-w>r" {:desc "Rotate windows"})
 (map [:n :x] :M "<C-w>h" opts)

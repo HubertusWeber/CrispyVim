@@ -13,5 +13,6 @@
          :plugins {:marks false :registers false :spelling {:enabled false}}
          :icons {:mappings false}
          :spec [{1 "<leader>s" :group "Search"}
+                {1 "<leader>x" :group "Trouble"}
                 {1 "," :group "Surround"}
                 {1 "<leader>g" :group "Git" :mode [:n :x]}]}}]
