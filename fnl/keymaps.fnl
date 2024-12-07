@@ -78,7 +78,7 @@
 (map :n "<leader>d" "<CMD>bdelete<CR>" {:desc "Delete buffer"})
 (map :n "<leader>D" "<CMD>bdelete!<CR>" {:desc "Delete buffer!"})
 (map :n "<leader>n" "<CMD>bnext<CR>" {:desc "Next buffer"})
-(map :n "<leader>l" "<CMD>bprevious<CR>" {:desc "Previous buffer"})
+(map :n "<leader>i" "<CMD>bprevious<CR>" {:desc "Previous buffer"})
 (map :n "<leader>m" "<CMD>e ~/Notes/!Home.md<CR>" {:desc "Notes"})
 
 ;; Clear highlights on search when pressing <Esc> in normal mode

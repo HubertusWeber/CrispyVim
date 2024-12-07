@@ -5,6 +5,7 @@
  {1 :neovim/nvim-lspconfig
   :lazy true
   :ft [:rust :lua :tex :clojure :fennel]
+  :event :VeryLazy
   :dependencies [{1 :j-hui/fidget.nvim :opts {}} :hrsh7th/cmp-nvim-lsp]
   :config (fn []
             (_G.vim.api.nvim_create_autocmd :LspAttach
@@ -97,8 +98,9 @@
             (set capa.textDocument.foldingRange
                  {:dynamicRegistration false :lineFoldingOnly true})
             (let [lspconfig (require :lspconfig)]
-              (lspconfig.rust_analyzer.setup {:capabilities capa})
               (lspconfig.lua_ls.setup {:capabilities capa})
+              (lspconfig.rust_analyzer.setup {:capabilities capa
+                                              :single_file_support true})
               (lspconfig.clojure_lsp.setup {:capabilities capa
                                             :single_file_support true})
               (lspconfig.fennel_ls.setup {:capabilities capa
@@ -110,4 +112,26 @@
                                                                           :-output-directory=/Users/hubertusweber/Output
                                                                           :-synctex=0
                                                                           :%f]
-                                                                   :onSave true}}}})))}]
+                                                                   :onSave true}}}}))
+            (_G.vim.keymap.set :n "<leader>l"
+                               (fn []
+                                 (let [active-clients (_G.vim.lsp.get_active_clients {:name :ltex})]
+                                   (if (> (length active-clients) 0)
+                                       (each [_ client (ipairs active-clients)]
+                                         (client:stop)
+                                         (_G.vim.notify "LTeX language server stopped"
+                                                        _G.vim.log.levels.INFO))
+                                       (let [ltex (require :lspconfig)]
+                                         (ltex.ltex.setup {:capabilities capa
+                                                           :settings {:ltex {:enabled true
+                                                                             :additionalRules {:enablePickyRules true
+                                                                                               :motherTongue :de-DE}
+                                                                             :languageToolHttpServerUri (os.getenv "LANGUAGETOOL_HTTP_SERVER_URI")
+                                                                             :languageToolOrg {:username (os.getenv "LANGUAGETOOL_ORG_USERNAME")
+                                                                                               :apiKey (os.getenv "LANGUAGETOOL_ORG_APIKEY")}
+                                                                             :ltex-ls {:logLevel :severe}
+                                                                             :checkFrequency :save}}})
+                                         (ltex.ltex.launch)
+                                         (_G.vim.notify "LTeX language server started"
+                                                        _G.vim.log.levels.INFO)))))
+                               {:desc "Toggle LTeX" :silent true}))}]
