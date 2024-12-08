@@ -7,12 +7,14 @@
                   :cond (fn []
                           (= (_G.vim.fn.executable :make) 1))}
                  :nvim-telescope/telescope-ui-select.nvim
-                 :jonarrien/telescope-cmdline.nvim]
+                 :jonarrien/telescope-cmdline.nvim
+                 :nvim-telescope/telescope-bibtex.nvim]
   :config (fn []
             ((. (require :telescope) :setup) {})
             (pcall (. (require :telescope) :load_extension) :fzf)
             (pcall (. (require :telescope) :load_extension) :ui-select)
-            (pcall (. (require :telescope) :load_extension) :cmdline))
+            (pcall (. (require :telescope) :load_extension) :cmdline)
+            (pcall (. (require :telescope) :load_extension) :bibtex))
   :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Search help"}
          {1 "<leader>sk" 2 "<CMD>Telescope keymaps<CR>" :desc "Search keymaps"}
          {1 "<leader>sf"
@@ -25,6 +27,7 @@
          {1 "<leader>sr"
           2 "<CMD>Telescope live_grep<CR>"
           :desc "Search ripgrep"}
+         {1 "<leader>se" 2 "<CMD>Telescope bibtex<CR>" :desc "Search bibtex"}
          {1 "<leader>sd"
           2 "<CMD>Telescope diagnostics<CR>"
           :desc "Search diagnostics"}
