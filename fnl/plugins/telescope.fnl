@@ -2,6 +2,7 @@
   :lazy true
   :branch :0.1.x
   :dependencies [:nvim-lua/plenary.nvim
+                 :nvim-tree/nvim-web-devicons
                  {1 :nvim-telescope/telescope-fzf-native.nvim
                   :build :make
                   :cond (fn []
