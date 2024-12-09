@@ -1,6 +1,5 @@
 [{1 :nvim-treesitter/nvim-treesitter
-  :lazy true
-  :event [:BufRead :BufNewFile]
+  :lazy false
   :build :TSUpdate
   :init (fn []
           (tset (require :nvim-treesitter.install) :compilers
