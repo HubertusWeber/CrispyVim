@@ -7,18 +7,21 @@
                                                      :inside_next :rn
                                                      :around_las :al
                                                      :inside_last :rl}})
-          (local mini-clue (require "mini.clue"))
-          (mini-clue.setup {:triggers [{:mode "n" :keys "<leader>"}
-                                       {:mode "x" :keys "<leader>"}]
-                            :groups {:<leader>s {:desc "Search..."}}
-                            :clues [{:mode :n :keys "<leader>g" :desc "Git..."}
-                                    {:mode :n
-                                     :keys "<leader>s"
-                                     :desc "Search..."}
-                                    {:mode :n
-                                     :keys "<leader>x"
-                                     :desc "Trouble..."}]
-                            :window {:border "single" :delay 0 :width 50}})
+          ((. (require :mini.clue) :setup) {:triggers [{:mode "n"
+                                                        :keys "<leader>"}
+                                                       {:mode "x"
+                                                        :keys "<leader>"}]
+                                            :groups {:<leader>s {:desc "Search..."}}
+                                            :clues [{:mode :n
+                                                     :keys "<leader>g"
+                                                     :desc "Git..."}
+                                                    {:mode :n
+                                                     :keys "<leader>s"
+                                                     :desc "Search..."}
+                                                    {:mode :n
+                                                     :keys "<leader>x"
+                                                     :desc "Trouble..."}]
+                                            :window {:delay 0}})
           ((. (require :mini.comment) :setup) {:mappings {:comment_line :<leader>c
                                                           :comment_visual :<leader>c
                                                           :textobject :C}})

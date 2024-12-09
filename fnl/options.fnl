@@ -30,8 +30,11 @@
 ;; Keep signcolumn on by default
 (set vim.opt.signcolumn :yes)
 
-;; Decrease update time
-(set vim.opt.updatetime 250)
+;; Very low update time to go blazingly fast
+(set vim.opt.updatetime 100)
+
+;; Set the time neovim waits for a sequence of keys to zero for maximum snappiness
+(set vim.opt.timeoutlen 0)
 
 ;; Configure how new splits should be opened
 (set vim.opt.splitright true)
