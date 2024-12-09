@@ -1,5 +1,5 @@
 [{1 :MeanderingProgrammer/render-markdown.nvim
-  :lazy false
-  :dependencies ["nvim-treesitter/nvim-treesitter"
-                 "nvim-tree/nvim-web-devicons"]
+  :lazy true
+  :ft [:markdown]
+  :dependencies [:nvim-treesitter/nvim-treesitter]
   :opts {:heading {:enabled false}}}]
