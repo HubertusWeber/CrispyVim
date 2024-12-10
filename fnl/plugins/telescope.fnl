@@ -60,6 +60,11 @@
                                                         :buffers {:previewer false
                                                                   :prompt_title false
                                                                   :results_title false}
+                                                        :current_buffer_fuzzy_find {:previewer false
+                                                                                    :prompt_title false
+                                                                                    :results_title false
+                                                                                    :layout_config {:width 0.8
+                                                                                                    :height 0.8}}
                                                         :grep_string {:previewer false
                                                                       :prompt_title false
                                                                       :results_title false}
