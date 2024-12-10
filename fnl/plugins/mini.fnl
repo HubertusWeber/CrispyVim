@@ -38,6 +38,10 @@
                                                         :synchronize :g
                                                         :trim_left "<"
                                                         :trim_right ">"}})
+          (_G.vim.keymap.set :n "<leader>e"
+                             (fn []
+                               ((. (require :mini.files) :open)))
+                             {:desc "File explorer"})
           ((. (require :mini.icons) :setup) {})
           ((. (require :mini.splitjoin) :setup) {:mappings {:toggle :<leader>z}})
           ((. (require :mini.surround) :setup) {:mappings {:add "\"a"
