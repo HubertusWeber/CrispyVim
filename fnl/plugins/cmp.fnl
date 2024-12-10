@@ -1,9 +1,7 @@
 [{1 :hrsh7th/nvim-cmp
   :lazy true
   :event :InsertEnter
-  :dependencies [:hrsh7th/cmp-nvim-lsp
-                 :hrsh7th/cmp-path
-                 :windwp/nvim-autopairs]
+  :dependencies [:hrsh7th/cmp-nvim-lsp :hrsh7th/cmp-path]
   :config (fn []
             (let [cmp (require :cmp)]
               (cmp.setup {:completion {:autocomplete false
@@ -16,6 +14,4 @@
                                                                "<S-Tab>" (cmp.mapping.complete {})})
                           :sources [{:name :lazydev :group_index 0}
                                     {:name :nvim_lsp}
-                                    {:name :path}]})
-              (let [cmp_autopairs (require :nvim-autopairs.completion.cmp)]
-                (cmp.event:on :confirm_done (cmp_autopairs.on_confirm_done)))))}]
+                                    {:name :path}]})))}]
