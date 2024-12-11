@@ -6,7 +6,6 @@
   :lazy true
   :ft [:rust :lua :tex :clojure :fennel]
   :dependencies [{1 :j-hui/fidget.nvim :lazy true :opts {}}
-                 {1 :nvimdev/lspsaga.nvim :lazy true :opts {}}
                  :hrsh7th/cmp-nvim-lsp]
   :config (fn []
             (_G.vim.api.nvim_create_autocmd :LspAttach
