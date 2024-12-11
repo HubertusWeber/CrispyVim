@@ -12,8 +12,8 @@
 ;; Disable showing pressed keys in the lower right corner
 (set vim.opt.showcmd false)
 
-;; Sync clipboard between OS and Neovim.
-;;  Schedule the setting after `UiEnter` because it can increase startup-time.
+;; Sync clipboard between OS and Neovim
+;;  Schedule the setting after `UiEnter` because it can increase startup-time
 (vim.schedule (fn []
                 (set vim.opt.clipboard :unnamedplus)))
 
@@ -40,7 +40,7 @@
 (set vim.opt.splitright true)
 (set vim.opt.splitbelow true)
 
-;; Preview substitutions live, as you type!
+;; Preview substitutions live, as you type
 (set vim.opt.inccommand :split)
 
 ;; Show which line your cursor is on
@@ -49,7 +49,7 @@
 ;; Use block cursor in all modes
 (set vim.opt.guicursor :a:block)
 
-;; Minimal number of screen lines to keep above and below the cursor.
+;; Minimal number of screen lines to keep above and below the cursor
 (set vim.opt.scrolloff 10)
 
 ;; Set tapstop to four like a normal f*cking person
