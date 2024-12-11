@@ -52,5 +52,4 @@
                                                           :replace "\"r"
                                                           :update_n_lines "\"n"
                                                           :suffix_last :l
-                                                          :suffix_next :n}})
-         ((. (require :mini.trailspace) :setup) {}))}
+                                                          :suffix_next :n}}))}
