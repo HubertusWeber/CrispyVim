@@ -1,7 +1,7 @@
 (local vim _G.vim)
 
-;; Disable welcome message
-(set vim.opt.shortmess :I)
+;; Disable unwanted messages from neovim
+(set vim.opt.shortmess :filnxtToOFWIcC)
 
 ;; Make line numbers default
 (set vim.opt.number true)
