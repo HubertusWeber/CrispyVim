@@ -1,1 +1,1 @@
-[{1 :sschleemilch/slimline.nvim :lazy false :opts {}}]
+{1 :sschleemilch/slimline.nvim :lazy false :opts {}}

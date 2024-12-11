@@ -1,1 +1,1 @@
-[{1 :tpope/vim-sleuth :lazy true :event [:BufRead :BufNewFile]}]
+{1 :tpope/vim-sleuth :lazy true :event [:BufRead :BufNewFile]}
