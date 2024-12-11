@@ -75,6 +75,9 @@
                                                        :oldfiles {:previewer false
                                                                   :prompt_title false
                                                                   :results_title false}
+                                                       :builtin {:previewer false
+                                                                 :prompt_title false
+                                                                 :results_title false}
                                                        :keymaps {:previewer false
                                                                  :prompt_title false
                                                                  :results_title false
