@@ -66,3 +66,6 @@
 
 ;; Allows cursor to move one char past line end
 (set vim.opt.virtualedit "onemore")
+
+;; Write down a lot of history as we can afford it
+(set vim.opt.shada "'4096,<0,s4096,h,:4096")
