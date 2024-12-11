@@ -1,1 +1,1 @@
-[{1 :HubertusWeber/statusline.lua :lazy false}]
+[{1 :sschleemilch/slimline.nvim :lazy false :opts {}}]
