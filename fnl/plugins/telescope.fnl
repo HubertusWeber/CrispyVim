@@ -9,7 +9,6 @@
                          (= (_G.vim.fn.executable :make) 1))}
                 :nvim-telescope/telescope-frecency.nvim
                 :nvim-telescope/telescope-ui-select.nvim
-                :jonarrien/telescope-cmdline.nvim
                 :nvim-telescope/telescope-bibtex.nvim]
  :config (fn []
            ((. (require :telescope) :setup) {:defaults {:prompt_prefix " "
@@ -106,19 +105,10 @@
                                                                 :override_generic_sorter true
                                                                 :override_file_sorter true
                                                                 :case_mode :smart_case}
-                                                          :frecency {:prompt_prefix " φ "}
-                                                          :cmdline {:picker {:prompt_title false
-                                                                             :sorting_strategy :descending
-                                                                             :prompt_prefix "  "
-                                                                             :layout_config {:horizontal {:prompt_position :bottom
-                                                                                                          :preview_width 0
-                                                                                                          :results_width 1}
-                                                                                             :width 0.3
-                                                                                             :height 0.3}}}}})
+                                                          :frecency {:prompt_prefix " φ "}}})
            (pcall (. (require :telescope) :load_extension) :fzf)
            (pcall (. (require :telescope) :load_extension) :frecency)
            (pcall (. (require :telescope) :load_extension) :ui-select)
-           (pcall (. (require :telescope) :load_extension) :cmdline)
            (pcall (. (require :telescope) :load_extension) :bibtex))
  :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Search help"}
         {1 "<leader>sk" 2 "<CMD>Telescope keymaps<CR>" :desc "Search keymaps"}
@@ -146,5 +136,4 @@
          :desc "Search fuzzy"}
         {1 "<leader>sn" 2 "<CMD>ObsidianQuickSwitch<CR>" :desc "Search note"}
         {1 "<leader>sm" 2 "<CMD>ObsidianSearch<CR>" :desc "Search in notes"}
-        {1 "<leader>b" 2 "<CMD>ObsidianBacklinks<CR>" :desc "Backlinks"}
-        {1 ":" 2 "<CMD>Telescope cmdline<CR>" :desc "Cmdline"}]}
+        {1 "<leader>b" 2 "<CMD>ObsidianBacklinks<CR>" :desc "Backlinks"}]}
