@@ -7,4 +7,22 @@
              (_G.vim.api.nvim_set_hl 0 "HighlightUndo"
                                      {:bg nord.nord8_gui :fg nord.nord4_gui})
              (_G.vim.api.nvim_set_hl 0 "HighlightRedo"
-                                     {:bg nord.nord8_gui :fg nord.nord4_gui})))}
+                                     {:bg nord.nord8_gui :fg nord.nord4_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestPassed" {:fg nord.nord14_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestFailed" {:fg nord.nord11_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestRunning" {:fg nord.nord13_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestSkipped" {:fg nord.nord9_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestTest" {:fg nord.nord4_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestNamespace" {:fg nord.nord7_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestFile" {:fg nord.nord7_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestDir" {:fg nord.nord8_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestIndent" {:fg nord.nord3_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestExpandMarker"
+                                     {:fg nord.nord4_gui})
+             (_G.vim.api.nvim_set_hl 0 "NeotestAdapterName"
+                                     {:fg nord.nord15_gui :bold true})
+             (_G.vim.api.nvim_set_hl 0 "NeotestWinSelect"
+                                     {:fg nord.nord7_gui :bold true})
+             (_G.vim.api.nvim_set_hl 0 "NeotestMarked"
+                                     {:fg nord.nord13_gui :bold true})
+             (_G.vim.api.nvim_set_hl 0 "NeotestTarget" {:fg nord.nord10_gui})))}

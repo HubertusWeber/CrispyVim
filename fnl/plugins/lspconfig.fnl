@@ -4,7 +4,7 @@
  {1 :Bilal2453/luvit-meta :lazy true}
  {1 :neovim/nvim-lspconfig
   :lazy true
-  :ft [:rust :lua :tex :clojure :fennel]
+  :ft [:lua :tex :clojure :fennel]
   :dependencies [{1 :j-hui/fidget.nvim :lazy true :opts {}}
                  {1 :nvimdev/lspsaga.nvim
                   :lazy true
@@ -51,7 +51,7 @@
                                                               (. (require :telescope.builtin)
                                                                  :lsp_dynamic_workspace_symbols)
                                                               "Search workplace symbol")
-                                                         (map "<leader>r"
+                                                         (map "<leader>R"
                                                               _G.vim.lsp.buf.rename
                                                               "Rename")
                                                          (map "<leader>a"
@@ -102,8 +102,6 @@
                  {:dynamicRegistration false :lineFoldingOnly true})
             (let [lspconfig (require :lspconfig)]
               (lspconfig.lua_ls.setup {:capabilities capa})
-              (lspconfig.rust_analyzer.setup {:capabilities capa
-                                              :single_file_support true})
               (lspconfig.clojure_lsp.setup {:capabilities capa
                                             :single_file_support true})
               (lspconfig.fennel_ls.setup {:capabilities capa

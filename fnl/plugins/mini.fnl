@@ -14,13 +14,13 @@
                                            :groups {:<leader>s {:desc "Search..."}}
                                            :clues [{:mode :n
                                                     :keys "<leader>g"
-                                                    :desc "Git..."}
+                                                    :desc "Git"}
                                                    {:mode :n
                                                     :keys "<leader>s"
-                                                    :desc "Search..."}
+                                                    :desc "Search"}
                                                    {:mode :n
                                                     :keys "<leader>x"
-                                                    :desc "Trouble..."}]
+                                                    :desc "Trouble"}]
                                            :window {:delay 0}})
          ((. (require :mini.comment) :setup) {:mappings {:comment_line :<leader>c
                                                          :comment_visual :<leader>c
