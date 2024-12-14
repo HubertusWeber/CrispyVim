@@ -69,3 +69,7 @@
 
 ;; Write down a lot of history as we can afford it
 (set vim.opt.shada "'4096,<0,s4096,h,:4096")
+
+;; Set up options in case of GUI front-end
+(set vim.opt.guifont "Hack Nerd Font:h16")
+(set vim.opt.linespace 4)
