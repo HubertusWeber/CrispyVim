@@ -7,7 +7,6 @@
                  :build :make
                  :cond (fn []
                          (= (_G.vim.fn.executable :make) 1))}
-                :nvim-telescope/telescope-frecency.nvim
                 :nvim-telescope/telescope-ui-select.nvim
                 :nvim-telescope/telescope-bibtex.nvim]
  :config (fn []
@@ -71,7 +70,8 @@
                                                        :help_tags {:previewer false
                                                                    :prompt_title false
                                                                    :results_title false}
-                                                       :oldfiles {:previewer false
+                                                       :oldfiles {:prompt_prefix " φ "
+                                                                  :previewer false
                                                                   :prompt_title false
                                                                   :results_title false}
                                                        :builtin {:previewer false
@@ -104,10 +104,8 @@
                                                           :fzf {:fuzzy true
                                                                 :override_generic_sorter true
                                                                 :override_file_sorter true
-                                                                :case_mode :smart_case}
-                                                          :frecency {:prompt_prefix " φ "}}})
+                                                                :case_mode :smart_case}}})
            (pcall (. (require :telescope) :load_extension) :fzf)
-           (pcall (. (require :telescope) :load_extension) :frecency)
            (pcall (. (require :telescope) :load_extension) :ui-select)
            (pcall (. (require :telescope) :load_extension) :bibtex))
  :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Search help"}
@@ -125,7 +123,7 @@
          2 "<CMD>Telescope diagnostics<CR>"
          :desc "Search diagnostics"}
         {1 "<leader><leader>"
-         2 "<CMD>Telescope frecency<CR>"
+         2 "<CMD>Telescope oldfiles<CR>"
          :desc "Open file"}
         {1 "<leader>sc"
          2 "<CMD>Telescope find_files cwd=~/.config/nvim<CR>"
