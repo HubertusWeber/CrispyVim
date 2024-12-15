@@ -1,7 +1,7 @@
 {1 :kevinhwang91/nvim-ufo
  :lazy true
  :event [:BufRead :BufNewFile]
- :dependencies [:kevinhwang91/promise-async]
+ :dependencies [:kevinhwang91/promise-async :luukvbaal/statuscol.nvim]
  :config (fn []
            (set _G.vim.o.foldlevel 99)
            (set _G.vim.o.foldlevelstart 99)
