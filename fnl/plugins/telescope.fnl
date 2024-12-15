@@ -11,6 +11,7 @@
                 :nvim-telescope/telescope-bibtex.nvim
                 :jvgrootveld/telescope-zoxide
                 :xiyaowong/telescope-emoji.nvim
+                :nvim-telescope/telescope-frecency.nvim
                 {1 :jmbuhr/telescope-zotero.nvim
                  :dependencies [:kkharji/sqlite.lua]}]
  :config (fn []
@@ -121,6 +122,7 @@
            (pcall (. (require :telescope) :load_extension) :emoji)
            (pcall (. (require :telescope) :load_extension) :zoxide)
            (pcall (. (require :telescope) :load_extension) :zotero)
+           (pcall (. (require :telescope) :load_extension) :frecency)
            (pcall (. (require :telescope) :load_extension) :bibtex))
  :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Search help"}
         {1 "<leader>sk" 2 "<CMD>Telescope keymaps<CR>" :desc "Search keymaps"}
@@ -137,7 +139,7 @@
          2 "<CMD>Telescope diagnostics<CR>"
          :desc "Search diagnostics"}
         {1 "<leader><leader>"
-         2 "<CMD>Telescope oldfiles<CR>"
+         2 "<CMD>Telescope frecency<CR>"
          :desc "Open file"}
         {1 "<leader>sc"
          2 "<CMD>Telescope find_files cwd=~/.config/nvim<CR>"
