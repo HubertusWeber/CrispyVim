@@ -9,6 +9,7 @@
                          (= (_G.vim.fn.executable :make) 1))}
                 :nvim-telescope/telescope-ui-select.nvim
                 :nvim-telescope/telescope-bibtex.nvim
+                :xiyaowong/telescope-emoji.nvim
                 {1 :jmbuhr/telescope-zotero.nvim
                  :dependencies [:kkharji/sqlite.lua]}]
  :config (fn []
@@ -103,6 +104,9 @@
                                                                                                    "└"]
                                                                                      :border true
                                                                                      :winblend 0}}
+                                                          :emoji {:action (fn [emoji]
+                                                                            (_G.vim.fn.setreg :*
+                                                                                              emoji.value))}
                                                           :fzf {:fuzzy true
                                                                 :override_generic_sorter true
                                                                 :override_file_sorter true
@@ -112,6 +116,7 @@
                                           :zotero_storage_path "~/.local/share/Zotero/storage"})
            (pcall (. (require :telescope) :load_extension) :fzf)
            (pcall (. (require :telescope) :load_extension) :ui-select)
+           (pcall (. (require :telescope) :load_extension) :emoji)
            (pcall (. (require :telescope) :load_extension) :zotero)
            (pcall (. (require :telescope) :load_extension) :bibtex))
  :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Search help"}
@@ -124,7 +129,7 @@
         {1 "<leader>sr"
          2 "<CMD>Telescope live_grep<CR>"
          :desc "Search ripgrep"}
-        {1 "<leader>se" 2 "<CMD>Telescope bibtex<CR>" :desc "Search bibtex"}
+        {1 "<leader>sb" 2 "<CMD>Telescope bibtex<CR>" :desc "Search bibtex"}
         {1 "<leader>sd"
          2 "<CMD>Telescope diagnostics<CR>"
          :desc "Search diagnostics"}
@@ -135,7 +140,8 @@
          2 "<CMD>Telescope find_files cwd=~/.config/nvim<CR>"
          :desc "Search config file"}
         {1 "<leader>sz" 2 "<CMD>Telescope zotero<CR>" :desc "Search in zotero"}
-        {1 "<leader>sb" 2 "<CMD>Telescope buffers<CR>" :desc "Search buffer"}
+        {1 "<leader>se" 2 "<CMD>Telescope emoji<CR>" :desc "Search emoji"}
+        {1 "<leader>sj" 2 "<CMD>Telescope buffers<CR>" :desc "Search buffer"}
         {1 "<leader>f"
          2 "<CMD>Telescope current_buffer_fuzzy_find<CR>"
          :desc "Search fuzzy"}
