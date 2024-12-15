@@ -8,7 +8,8 @@
   :dependencies [{1 :j-hui/fidget.nvim :lazy true :opts {}}
                  {1 :nvimdev/lspsaga.nvim
                   :lazy true
-                  :opts {:lightbulb {:enable false}}}
+                  :opts {:lightbulb {:enable false}
+                         :symbol_in_winbar {:enable false}}}
                  :hrsh7th/cmp-nvim-lsp]
   :config (fn []
             (_G.vim.api.nvim_create_autocmd :LspAttach
