@@ -38,7 +38,7 @@
                                                        :synchronize :g
                                                        :trim_left "<"
                                                        :trim_right ">"}})
-         (_G.vim.keymap.set :n "<leader>e"
+         (_G.vim.keymap.set :n "<leader>f"
                             (fn []
                               ((. (require :mini.files) :open)))
                             {:desc "File explorer"})

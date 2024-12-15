@@ -115,7 +115,7 @@
                                                                           :-synctex=0
                                                                           :%f]
                                                                    :onSave true}}}}))
-            (_G.vim.keymap.set :n "<leader>l"
+            (_G.vim.keymap.set :n "<leader>L"
                                (fn []
                                  (let [active-clients (_G.vim.lsp.get_active_clients {:name :ltex})]
                                    (if (> (length active-clients) 0)

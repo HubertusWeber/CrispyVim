@@ -78,7 +78,9 @@
 (map :n "<leader>d" "<CMD>bdelete<CR>" {:desc "Delete buffer"})
 (map :n "<leader>D" "<CMD>bdelete!<CR>" {:desc "Delete buffer!"})
 (map :n "<leader>n" "<CMD>bnext<CR>" {:desc "Next buffer"})
+(map :n "<leader>N" "<CMD>bprevious<CR>" {:desc "Previous buffer"})
 (map :n "<leader>m" "<CMD>e ~/Notes/!Home.md<CR>" {:desc "Notes"})
+(map :n "<leader>l" "<CMD>Lazy<CR>" {:desc "Lazy"})
 
 ;; Clear highlights on search when pressing <Esc> in normal mode
 (map :n "<Esc>" "<CMD>nohlsearch<CR>" opts)
@@ -103,7 +105,7 @@
 (map [:n :x] "<S-Right>" "<C-w>>" opts)
 
 ;; Load nvim-lspconfig (this keybind is overwritten once the plugin is loaded)
-(map [:n :x] "<leader>l"
+(map [:n :x] "<leader>L"
      (fn []
        ((. (require :lazy) :load) {:plugins [:nvim-lspconfig]})
        (_G.vim.notify "LSP loaded" _G.vim.log.levels.INFO))

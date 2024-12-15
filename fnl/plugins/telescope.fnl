@@ -11,7 +11,6 @@
                 :nvim-telescope/telescope-bibtex.nvim
                 :jvgrootveld/telescope-zoxide
                 :xiyaowong/telescope-emoji.nvim
-                :nvim-telescope/telescope-frecency.nvim
                 {1 :jmbuhr/telescope-zotero.nvim
                  :dependencies [:kkharji/sqlite.lua]}]
  :config (fn []
@@ -124,7 +123,6 @@
            (pcall (. (require :telescope) :load_extension) :emoji)
            (pcall (. (require :telescope) :load_extension) :zoxide)
            (pcall (. (require :telescope) :load_extension) :zotero)
-           (pcall (. (require :telescope) :load_extension) :frecency)
            (pcall (. (require :telescope) :load_extension) :bibtex))
  :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Search help"}
         {1 "<leader>sk" 2 "<CMD>Telescope keymaps<CR>" :desc "Search keymaps"}
@@ -141,7 +139,7 @@
          2 "<CMD>Telescope diagnostics<CR>"
          :desc "Search diagnostics"}
         {1 "<leader><leader>"
-         2 "<CMD>Telescope frecency<CR>"
+         2 "<CMD>Telescope oldfiles<CR>"
          :desc "Open file"}
         {1 "<leader>sc"
          2 "<CMD>Telescope find_files cwd=~/.config/nvim<CR>"
@@ -152,9 +150,9 @@
          :desc "Search directory"}
         {1 "<leader>se" 2 "<CMD>Telescope emoji<CR>" :desc "Search emoji"}
         {1 "<leader>sj" 2 "<CMD>Telescope buffers<CR>" :desc "Search buffer"}
-        {1 "<leader>f"
+        {1 "<leader>i"
          2 "<CMD>Telescope current_buffer_fuzzy_find<CR>"
-         :desc "Search fuzzy"}
+         :desc "Search in file"}
         {1 "<leader>sn" 2 "<CMD>ObsidianQuickSwitch<CR>" :desc "Search note"}
         {1 "<leader>sm" 2 "<CMD>ObsidianSearch<CR>" :desc "Search in notes"}
         {1 "<leader>b" 2 "<CMD>ObsidianBacklinks<CR>" :desc "Backlinks"}]}
