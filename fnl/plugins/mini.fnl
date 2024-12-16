@@ -44,12 +44,12 @@
                             {:desc "File explorer"})
          ((. (require :mini.icons) :setup) {})
          ((. (require :mini.splitjoin) :setup) {:mappings {:toggle :<leader>z}})
-         ((. (require :mini.surround) :setup) {:mappings {:add "\"a"
-                                                          :delete "\"d"
-                                                          :find "\"f"
-                                                          :find_left "\"F"
-                                                          :highlight "\"h"
-                                                          :replace "\"r"
-                                                          :update_n_lines "\"n"
+         ((. (require :mini.surround) :setup) {:mappings {:add :ja
+                                                          :delete :jd
+                                                          :find :jf
+                                                          :find_left :jF
+                                                          :highlight :jh
+                                                          :replace :jr
+                                                          :update_n_lines :jn
                                                           :suffix_last :l
                                                           :suffix_next :n}}))}

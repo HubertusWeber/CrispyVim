@@ -6,6 +6,7 @@
 (map [:n :x :o] :n :gj opts)
 (map [:n :x :o] :e :gk opts)
 (map [:n :x :o] :i :l opts)
+(map [:n :x :o] :i :l opts)
 
 ;; Word movement
 (map [:n :x :o] :l :b opts)
@@ -25,8 +26,6 @@
 (map [:n :x] :w :c opts)
 (map [:n :x] :W :C opts)
 (map :o :w :c opts)
-(map :x :t :s opts)
-(map :x :T :S opts)
 
 ;; Yank and paste
 (map [:n :x] :c :y opts)
@@ -91,8 +90,8 @@
 ;; Window commands
 (map [:n :x] "<leader>k" "<CMD>new<CR>" {:desc "Split —"})
 (map [:n :x] "<leader>h" "<CMD>vnew<CR>" {:desc "Split |"})
-(map [:n :x] "<leader>q" "<C-w>q" {:desc "Close window"})
-(map [:n :x] "<leader>Q" "<C-w>o" {:desc "Close others"})
+(map [:n :x] "<leader>q" "<CMD>close<CR>" {:desc "Close window"})
+(map [:n :x] "<leader>Q" "<CMD>only<CR>" {:desc "Close others"})
 (map [:n :x] "<leader>w" "<C-w>w" {:desc "Switch window"})
 (map [:n :x] "<leader>v" "<C-w>r" {:desc "Rotate windows"})
 (map [:n :x] :M "<C-w>h" opts)
@@ -117,3 +116,7 @@
                                  :group (_G.vim.api.nvim_create_augroup "kickstart-highlight-yank"
                                                                         {:clear true})
                                  :callback (fn [] (_G.vim.highlight.on_yank))})
+
+;; Unmappings
+(map [:n :x] :<leader> "")
+(map [:n :x] :j "")
