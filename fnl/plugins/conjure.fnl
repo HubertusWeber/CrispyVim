@@ -1,8 +1,9 @@
 {1 :Olical/conjure
  :lazy true
- :ft [:fennel :clojure :rust]
  :init (fn []
          (set _G.vim.g.conjure#client_on_load false)
+         (set _G.vim.g.conjure#filetype#fennel "conjure.client.fennel.aniseed")
+         (set _G.vim.g.conjure#client#fennel#aniseed#deprecation_warning false)
          (set _G.vim.g.conjure#extract#tree_sitter#enabled true)
          (set _G.vim.g.conjure#mapping#enable_defaults false)
          (set _G.vim.g.conjure#mapping#prefix "<leader>e")
@@ -24,22 +25,17 @@
          (set _G.vim.g.conjure#mapping#eval_replace_form "!")
          (set _G.vim.g.conjure#mapping#eval_marked_form "m")
          (set _G.vim.g.conjure#mapping#eval_file "f")
-         (set _G.vim.g.conjure#mapping#apping#eval_buf "b")
-         (let [mini-clue (require :mini.clue)
-               config (. mini-clue :config)]
-           (table.insert config.clues
-                         {:mode "n" :keys "<leader>e" :desc "Conjure"})))
- :keys [{1 "<leader>eo"
+         (set _G.vim.g.conjure#mapping#apping#eval_buf "b"))
+ :config (fn []
+           (let [mini-clue (require :mini.clue)
+                 config (. mini-clue :config)]
+             (table.insert config.clues
+                           {:mode "n" :keys "<leader>e" :desc "Conjure"})))
+ :keys [{1 "<leader>E"
          2 "<CMD>ConjureConnect<CR>"
-         :desc "Connect"
-         :ft [:fennel :clojure :rust]}
+         :desc "Conjure connect"
+         :ft [:fennel :clojure]}
         {1 "<leader>E"
-         :mode [:n]
-         2 "<CMD>%ConjureEval<CR>"
-         :desc "Eval"
-         :ft [:fennel :clojure :rust]}
-        {1 "<leader>E"
-         :mode [:x]
-         2 "<CMD>ConjureEval<CR>"
-         :desc "Eval"
-         :ft [:fennel :clojure :rust]}]}
+         2 "<CMD>lua require('conjure.client.rust.evcxr').start()<CR>"
+         :desc "Conjure start"
+         :ft [:rust]}]}
