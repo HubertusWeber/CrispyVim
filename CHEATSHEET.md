@@ -41,7 +41,6 @@
 - `k` Next search match
 - `K` Previous search match
 
----
 
 ## 🌵 Insert & Edit Operations
 
@@ -67,7 +66,6 @@
 - `q` Start/stop recording a macro (e.g. `qa` to record in `a`)
 - `Q` Replay a recorded macro (e.g. `Qa` to run macro in `a`)
 
----
 
 ## 🥨 Yank, Paste & Delete
 
@@ -82,14 +80,12 @@
 - `gV` Paste before last yank position
 - `x` Delete char without yank
 
----
 
 ## 🎪 Undo & Redo
 
 - `z` Undo
 - `Z` Redo
 
----
 
 ## 🦋 Visual Modes
 
@@ -97,7 +93,6 @@
 - `A` Enter Linewise Visual mode
 - `<C-a>` Enter Block-Visual mode
 
----
 
 ## 🎭 Searching & Special Movements
 
@@ -106,7 +101,6 @@
 - `k` Next search match
 - `K` Previous search match
 
----
 
 ## 🌺 Buffer Management
 
@@ -115,7 +109,6 @@
 - `<leader>n` Next buffer
 - `<leader>N` Previous buffer
 
----
 
 ## 🎨 Window Management
 
@@ -134,7 +127,6 @@
 - `<S-Up>` Resize shorter
 - `<S-Down>` Resize taller
 
----
 
 ## 🪄 UFO
 
@@ -142,7 +134,6 @@
 - `<leader>u` Close all folds
 - `<leader>t` Toggle fold
 
----
 
 ## 🎃 Gitsigns
 
@@ -163,7 +154,6 @@
 - `B` Toggle current line blame
 - `t` Toggle deleted lines
 
----
 
 ## 🌈 mini.files
 
@@ -185,7 +175,6 @@ Inside explorer:
 - `<` Trim left
 - `>` Trim right
 
----
 
 ## 🎠 mini.surround
 
@@ -197,7 +186,6 @@ Inside explorer:
 - `jr` Replace surrounding
 - `jn` Update surrounding n-lines
 
----
 
 ## 🎪 LSP
 
@@ -213,7 +201,6 @@ Inside explorer:
 - `<leader>j` Toggle LSP inlay hints
 - `<leader>L` Start LSP client (usually already done automatically)
 
----
 
 ## 🌸 Telescope
 
@@ -239,7 +226,6 @@ Inside explorer:
 - `m` Obsidian Search notes
 - `i` In-file fuzzy find
 
----
 
 ## 🎡 Search-Replace
 
@@ -248,7 +234,6 @@ Inside explorer:
 
 (Works in normal and visual mode.)
 
----
 
 ## 🍡 Trouble
 
@@ -261,7 +246,6 @@ Inside explorer:
 - `l` Toggle location list
 - `i` Toggle quickfix list
 
----
 
 ## 🎢 Conjure
 
@@ -289,7 +273,6 @@ Inside explorer:
 - `f` Eval file
 - `b` Eval buffer
 
----
 
 ## 🦀 Rustaceanvim
 
@@ -326,16 +309,15 @@ Inside explorer:
 - `[` Move item up
 - `]` Move item down
 
----
 
 ## 🌴 Miscellaneous
 
 - PaperPlane: `<leader>p` Open PDF
 - Snipe: `,` Open snipe menu
+- Noice: `;` Noice UI
 - Conform: `<leader>o` Format buffer
 - mini.splitjoin: `<leader>z` Toggle split/join lines
 - LTeX: `<leader>L` Toggle grammar/spell checker
-- Noice: `<leader>;` Noice UI
 - Nabla: `<leader>,` Toggle nabla popup
 - Notes: `<leader>m` Open `~/Notes/!Home.md`
 - Lazy: `<leader>l` Open Lazy plugin manager
