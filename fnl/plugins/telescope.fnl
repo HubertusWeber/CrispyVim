@@ -39,10 +39,10 @@
                                                         :previewer false
                                                         :path_display [:truncate]
                                                         :set_env {:COLORTERM :truecolor}
-                                                        :mappings {:i {:<esc> (. (require :telescope.actions)
-                                                                                 :close)}
-                                                                   :n {:<esc> (. (require :telescope.actions)
-                                                                                 :close)}}
+                                                        :mappings {:i {"<esc>" (. (require :telescope.actions)
+                                                                                  :close)}
+                                                                   :n {"<esc>" (. (require :telescope.actions)
+                                                                                  :close)}}
                                                         :file_ignore_patterns [:.git/]
                                                         :winblend 0
                                                         :results_height 1

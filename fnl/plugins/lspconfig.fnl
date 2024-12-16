@@ -25,19 +25,19 @@
                                                                                        func
                                                                                        {:buffer event.buf
                                                                                         :desc desc}))))
-                                                         (map :gd
+                                                         (map "gd"
                                                               (. (require :telescope.builtin)
                                                                  :lsp_definitions)
                                                               "Goto definition")
-                                                         (map :gr
+                                                         (map "gr"
                                                               (. (require :telescope.builtin)
                                                                  :lsp_references)
                                                               "Goto references")
-                                                         (map :gI
+                                                         (map "gI"
                                                               (. (require :telescope.builtin)
                                                                  :lsp_implementations)
                                                               "Goto implementation")
-                                                         (map :gt
+                                                         (map "gt"
                                                               (. (require :telescope.builtin)
                                                                  :lsp_type_definitions)
                                                               "Goto type definition")
@@ -56,7 +56,7 @@
                                                               _G.vim.lsp.buf.code_action
                                                               "Code action"
                                                               [:n :x])
-                                                         (map :gD
+                                                         (map "gD"
                                                               _G.vim.lsp.buf.declaration
                                                               "Goto declaration")
                                                          (let [client (_G.vim.lsp.get_client_by_id event.data.client_id)]

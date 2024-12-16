@@ -16,7 +16,7 @@
            (let [mini-clue (require :mini.clue)
                  config (. mini-clue :config)]
              (table.insert config.clues
-                           {:mode "n" :keys "<leader>r" :desc "Rust"})))
+                           {:mode :n :keys "<leader>r" :desc "Rust"})))
  :keys [{1 "<leader>ra"
          2 "<CMD>RustLsp codeAction<CR>"
          :desc "Code action"
@@ -27,7 +27,7 @@
          :ft :rust}
         {1 "<leader>rH"
          2 "<CMD>RustLsp hover range<CR>"
-         :mode "v"
+         :mode :v
          :desc "Hover range"
          :ft :rust}
         {1 "<leader>rr"
@@ -120,7 +120,7 @@
                               (fn [input]
                                 (when (and input (not= input ""))
                                   (_G.vim.cmd.RustLsp [:ssr input])))))
-         :mode "x"
+         :mode :x
          :desc "Structural search replace (visual)"
          :ft :rust}
         {1 "<leader>rg"

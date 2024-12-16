@@ -12,7 +12,7 @@
                                              {:pattern ["neotest-output"
                                                         "neotest-summary"]
                                               :callback (fn []
-                                                          (_G.vim.keymap.set "n"
+                                                          (_G.vim.keymap.set :n
                                                                              "q"
                                                                              #(_G.vim.cmd "quit")
                                                                              {:buffer true

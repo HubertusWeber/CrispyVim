@@ -1,7 +1,7 @@
 (local vim _G.vim)
 
 ;; Disable unwanted messages from neovim
-(set vim.opt.shortmess :filnxtToOFWIcC)
+(set vim.opt.shortmess "filnxtToOFWIcC")
 
 ;; Make line numbers default
 (set vim.opt.number true)
@@ -15,7 +15,7 @@
 ;; Sync clipboard between OS and Neovim
 ;;  Schedule the setting after `UiEnter` because it can increase startup-time
 (vim.schedule (fn []
-                (set vim.opt.clipboard :unnamedplus)))
+                (set vim.opt.clipboard "unnamedplus")))
 
 ;; Enable break indent
 (set vim.opt.breakindent true)
@@ -38,13 +38,13 @@
 (set vim.opt.splitbelow true)
 
 ;; Preview substitutions live, as you type
-(set vim.opt.inccommand :split)
+(set vim.opt.inccommand "split")
 
 ;; Show which line your cursor is on
 (set vim.opt.cursorline true)
 
 ;; Use block cursor in all modes
-(set vim.opt.guicursor :a:block)
+(set vim.opt.guicursor "a:block")
 
 ;; Minimal number of screen lines to keep above and below the cursor
 (set vim.opt.scrolloff 10)
