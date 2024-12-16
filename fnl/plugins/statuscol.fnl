@@ -8,7 +8,7 @@
                                (if (not= (_G.vim.fn.foldclosed args.lnum) -1)
                                    (string.format (.. "%" (tostring max-width)
                                                       "s")
-                                                  " ")
+                                                  " ")
                                    (string.format (.. "%" (tostring max-width)
                                                       "d")
                                                   args.lnum))))]}]}}
