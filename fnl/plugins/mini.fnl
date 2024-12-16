@@ -1,7 +1,7 @@
 {1 :echasnovski/mini.nvim
  :lazy false
  :init (fn []
-         ((. (require :mini.ai) :setup) {:mappings {:aroung :a
+         ((. (require :mini.ai) :setup) {:mappings {:around :a
                                                     :inside :r
                                                     :around_next :an
                                                     :inside_next :rn

@@ -25,7 +25,7 @@
          (set _G.vim.g.conjure#mapping#eval_replace_form "!")
          (set _G.vim.g.conjure#mapping#eval_marked_form "m")
          (set _G.vim.g.conjure#mapping#eval_file "f")
-         (set _G.vim.g.conjure#mapping#apping#eval_buf "b"))
+         (set _G.vim.g.conjure#mapping#eval_buf "b"))
  :config (fn []
            (let [mini-clue (require :mini.clue)
                  config (. mini-clue :config)]

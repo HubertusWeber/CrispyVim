@@ -12,6 +12,4 @@
                                                               "<Up>" (cmp.mapping.scroll_docs -4)
                                                               "<Down>" (cmp.mapping.scroll_docs 4)
                                                               "<S-Tab>" (cmp.mapping.complete {})})
-                         :sources [{:name :lazydev :group_index 0}
-                                   {:name :nvim_lsp}
-                                   {:name :path}]})))}
+                         :sources [{:name :nvim_lsp} {:name :path}]})))}

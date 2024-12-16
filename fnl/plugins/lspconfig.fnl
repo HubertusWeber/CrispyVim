@@ -1,7 +1,4 @@
-[{1 :folke/lazydev.nvim
-  :ft :lua
-  :opts {:library [{:path "luvit-meta/library" :words ["vim%.uv"]}]}}
- {1 :Bilal2453/luvit-meta :lazy true}
+[{1 :Bilal2453/luvit-meta :lazy true}
  {1 :neovim/nvim-lspconfig
   :lazy true
   :ft [:lua :tex :clojure :fennel]

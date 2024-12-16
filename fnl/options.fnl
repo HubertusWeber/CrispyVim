@@ -31,7 +31,7 @@
 (set vim.opt.signcolumn :yes)
 
 ;; Very low update time to go blazingly fast
-(set vim.opt.updatetime 100)
+(set vim.opt.updatetime 200)
 
 ;; Configure how new splits should be opened
 (set vim.opt.splitright true)
