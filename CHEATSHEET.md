@@ -34,13 +34,6 @@
 - `b` Repeat last character motion forward
 - `B` Repeat last character motion backward
 
-**Searching:**
-
-- `/` Search forward
-- `?` Search backward
-- `k` Next search match
-- `K` Previous search match
-
 
 ## 🌵 Insert & Edit Operations
 
@@ -59,7 +52,7 @@
 - `.` Repeat last command
 - `r` Replace a single character
 - `R` Enter Replace mode
-- `j` Join current line with the next
+- `J` Join current line with the next
 
 **Macros:**
 
