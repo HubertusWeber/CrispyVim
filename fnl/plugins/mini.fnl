@@ -20,7 +20,7 @@
                                                    {:mode :n
                                                     :keys "<leader>x"
                                                     :desc "Trouble"}]
-                                           :window {:delay 0}})
+                                           :window {:delay 1000}})
          ((. (require :mini.comment) :setup) {:mappings {:comment_line "<leader>c"
                                                          :comment_visual "<leader>c"
                                                          :textobject "C"}})

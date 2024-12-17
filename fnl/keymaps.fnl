@@ -118,5 +118,4 @@
                                  :callback (fn [] (_G.vim.highlight.on_yank))})
 
 ;; Unmappings
-(map [:n :x] "<space>" "")
 (map [:n :x] "j" "")
