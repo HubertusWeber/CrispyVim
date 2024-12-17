@@ -12,11 +12,7 @@
                  :server {:auto_attach true
                           :load_vscode_settings true
                           :settings (fn [_project_root default_settings]
-                                      default_settings)}})
-           (let [mini-clue (require :mini.clue)
-                 config (. mini-clue :config)]
-             (table.insert config.clues
-                           {:mode :n :keys "<leader>r" :desc "Rust"})))
+                                      default_settings)}}))
  :keys [{1 "<leader>ra"
          2 "<CMD>RustLsp codeAction<CR>"
          :desc "Code action"

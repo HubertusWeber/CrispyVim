@@ -11,15 +11,6 @@
                                                        :keys "<leader>"}
                                                       {:mode :x
                                                        :keys "<leader>"}]
-                                           :clues [{:mode :n
-                                                    :keys "<leader>g"
-                                                    :desc "Git"}
-                                                   {:mode :n
-                                                    :keys "<leader>s"
-                                                    :desc "Search"}
-                                                   {:mode :n
-                                                    :keys "<leader>x"
-                                                    :desc "Trouble"}]
                                            :window {:delay 1000}})
          ((. (require :mini.comment) :setup) {:mappings {:comment_line "<leader>c"
                                                          :comment_visual "<leader>c"

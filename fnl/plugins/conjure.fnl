@@ -26,11 +26,6 @@
          (set _G.vim.g.conjure#mapping#eval_marked_form "m")
          (set _G.vim.g.conjure#mapping#eval_file "f")
          (set _G.vim.g.conjure#mapping#eval_buf "b"))
- :config (fn []
-           (let [mini-clue (require :mini.clue)
-                 config (. mini-clue :config)]
-             (table.insert config.clues
-                           {:mode "n" :keys "<leader>e" :desc "Conjure"})))
  :keys [{1 "<leader>E"
          2 "<CMD>ConjureConnect<CR>"
          :desc "Conjure connect"
