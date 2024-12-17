@@ -1,12 +1,7 @@
 {1 :lewis6991/gitsigns.nvim
  :lazy true
  :event [:BufRead :BufNewFile]
- :opts {:signs {:add {:text "+"}
-                :change {:text "~"}
-                :delete {:text "_"}
-                :topdelete {:text "‾"}
-                :changedelete {:text "~"}}
-        :on_attach (fn [bufnr]
+ :opts {:on_attach (fn [bufnr]
                      (local gitsigns (require :gitsigns))
                      (local map
                             (fn [mode l r opts]
