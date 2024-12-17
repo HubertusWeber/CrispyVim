@@ -1,1 +1,1 @@
-{1 :rktjmp/hotpot.nvim :ft [:fennel]}
+{1 :rktjmp/hotpot.nvim :lazy true :ft [:fennel]}

@@ -1,4 +1,5 @@
 {1 "nvim-neotest/neotest"
+ :lazy true
  :dependencies ["rouge8/neotest-rust"
                 "nvim-neotest/nvim-nio"
                 "nvim-lua/plenary.nvim"

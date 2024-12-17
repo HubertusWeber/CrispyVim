@@ -1,4 +1,5 @@
 {1 :folke/trouble.nvim
+ :lazy true
  :opts {}
  :cmd "Trouble"
  :keys [{1 "<leader>xx"

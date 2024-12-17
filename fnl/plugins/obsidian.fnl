@@ -1,5 +1,4 @@
 {1 :epwalsh/obsidian.nvim
- :version "*"
  :lazy true
  :ft :markdown
  :cmd [:ObsidianQuickSwitch :ObsidianSearch]
