@@ -1,5 +1,6 @@
 {1 :nvim-treesitter/nvim-treesitter
- :lazy false
+ :lazy true
+ :event :VeryLazy
  :dependencies [:RRethy/nvim-treesitter-textsubjects]
  :build :TSUpdate
  :init (fn []

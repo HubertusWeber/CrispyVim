@@ -13,9 +13,7 @@
 (set vim.opt.showcmd false)
 
 ;; Sync clipboard between OS and Neovim
-;;  Schedule the setting after `UiEnter` because it can increase startup-time
-(vim.schedule (fn []
-                (set vim.opt.clipboard "unnamedplus")))
+(set vim.opt.clipboard "unnamedplus")
 
 ;; Enable break indent
 (set vim.opt.breakindent true)
