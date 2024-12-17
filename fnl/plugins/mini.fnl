@@ -11,7 +11,6 @@
                                                        :keys "<leader>"}
                                                       {:mode :x
                                                        :keys "<leader>"}]
-                                           :groups {:<leader>s {:desc "Search..."}}
                                            :clues [{:mode :n
                                                     :keys "<leader>g"
                                                     :desc "Git"}
