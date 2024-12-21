@@ -11,8 +11,7 @@
                          :code_actions {:ui_select_fallback false}}
                  :server {:auto_attach true
                           :load_vscode_settings true
-                          :settings (fn [_project_root default_settings]
-                                      default_settings)}}))
+                          :settings {"rust-analyzer" {:diagnostics {:disabled ["inactive-code"]}}}}}))
  :keys [{1 "<leader>ra"
          2 "<CMD>RustLsp codeAction<CR>"
          :desc "Code action"
