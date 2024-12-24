@@ -155,4 +155,7 @@
          :desc "Search in file"}
         {1 "<leader>sn" 2 "<CMD>ObsidianQuickSwitch<CR>" :desc "Search note"}
         {1 "<leader>sm" 2 "<CMD>ObsidianSearch<CR>" :desc "Search in notes"}
+        {1 "<leader>,"
+         2 "<CMD>Telescope lsp_definitions<CR>"
+         :desc "Go to definition"}
         {1 "<leader>b" 2 "<CMD>ObsidianBacklinks<CR>" :desc "Backlinks"}]}
