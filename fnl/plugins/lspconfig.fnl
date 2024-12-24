@@ -1,8 +1,7 @@
 {1 :neovim/nvim-lspconfig
  :lazy true
  :ft [:lua :tex :clojure :fennel]
- :dependencies [{1 :j-hui/fidget.nvim :lazy true :opts {}}
-                {1 :nvimdev/lspsaga.nvim
+ :dependencies [{1 :nvimdev/lspsaga.nvim
                  :lazy true
                  :opts {:lightbulb {:enable false}
                         :symbol_in_winbar {:enable false}}}
