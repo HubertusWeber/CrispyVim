@@ -135,6 +135,8 @@
 
 **Prefix:** `<leader>g`
 
+- `g` Open GitUI
+
 - `s` Stage hunk
 - `r` Reset hunk
 - `S` Stage buffer
@@ -198,6 +200,8 @@ Inside explorer:
 ## 🌸 Telescope
 
 - `<leader><leader>` Recent files
+- `<leader>i` Search in file
+- `<leader>,` Go to definition
 - `<leader>b` Obsidian Backlinks
 
 **Prefix:** `<leader>s`
@@ -309,9 +313,10 @@ Inside explorer:
 - Snipe: `,` Open snipe menu
 - Noice: `;` Noice UI
 - Conform: `<leader>o` Format buffer
+- mini.comment: `<leader>c` Comment line
 - mini.splitjoin: `<leader>z` Toggle split/join lines
 - LTeX: `<leader>L` Toggle grammar/spell checker
-- Nabla: `<leader>,` Toggle nabla popup
+- Nabla: `<leader>.` Toggle nabla popup
 - Notes: `<leader>m` Open `~/Notes/!Home.md`
 - Lazy: `<leader>l` Open Lazy plugin manager
 
