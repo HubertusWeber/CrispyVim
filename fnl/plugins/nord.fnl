@@ -1,4 +1,5 @@
 {1 :shaunsingh/nord.nvim
+ :enabled false
  :lazy false
  :priority 1000
  :config (fn []
@@ -25,4 +26,18 @@
                                      {:fg nord.nord7_gui :bold true})
              (_G.vim.api.nvim_set_hl 0 "NeotestMarked"
                                      {:fg nord.nord13_gui :bold true})
-             (_G.vim.api.nvim_set_hl 0 "NeotestTarget" {:fg nord.nord10_gui})))}
+             (_G.vim.api.nvim_set_hl 0 "NeotestTarget" {:fg nord.nord10_gui})
+             (let [colors {:cyan nord.nord8_gui
+                           :green nord.nord14_gui
+                           :white nord.nord4_gui
+                           :blue nord.nord9_gui}]
+               (each [name color (pairs colors)]
+                 (_G.vim.api.nvim_set_hl 0
+                                         (.. :RainbowDelimiter
+                                             (string.upper (string.sub name 1 1))
+                                             (string.sub name 2))
+                                         {:fg color}))
+               (_G.vim.api.nvim_set_hl 0 :MatchParen
+                                       {:fg nord.nord0_gui
+                                        :bg nord.nord15_gui
+                                        :bold true}))))}

@@ -3,7 +3,9 @@
  :keys [{1 ","
          2 (fn []
              ((. (require :snipe) :open_buffer_menu)))}]
- :opts {:ui {:position :center :text_align :file-first}
+ :opts {:ui {:open_win_override {:title "" :border :single}
+             :position :center
+             :text_align :file-first}
         :hints {:dictionary "tsraddhogluypfw"}
         :navigate {:next_page "N"
                    :prev_page "E"

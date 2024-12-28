@@ -8,9 +8,9 @@ A delightfully Lispy Neovim configuration built with [hotpot.nvim](https://githu
 
 - **Language**: Fennel all the way down (except for a tiny bit of Lua for bootstrapping, but that doesn't count) 📝
 - **Compilation**: hotpot.nvim turns our Fennel soup into a performance feast ⚡
-- **Plugin Management**: So lazy it starts up before you finish pressing Enter (< 30ms on my machine) 🚄
+- **Plugin Management**: So lazy it starts up before you finish pressing Enter 🚄
 - **Keyboard Layout**: Colemak-DH or bust! QWERTY fingers will be very confused ⌨️
-- **Theme**: Nord, because we're cool like that ❄️
+- **Themes**: Nord and Gruvbox to match your vibe - arctic cool or cozy warmth ❄️ / 🔥
 
 ### Main Workflows 🌟
 

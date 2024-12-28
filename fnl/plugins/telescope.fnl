@@ -79,7 +79,8 @@
                                                        :oldfiles {:prompt_prefix " φ "
                                                                   :previewer false
                                                                   :prompt_title false
-                                                                  :results_title false}
+                                                                  :results_title false
+                                                                  :path_display [:tail]}
                                                        :builtin {:previewer false
                                                                  :prompt_title false
                                                                  :results_title false}
