@@ -135,8 +135,6 @@
 
 **Prefix:** `<leader>g`
 
-- `g` Open GitUI
-
 - `s` Stage hunk
 - `r` Reset hunk
 - `S` Stage buffer
