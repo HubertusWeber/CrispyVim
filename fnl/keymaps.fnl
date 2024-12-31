@@ -5,6 +5,10 @@
 (map [:n :x :o] "n" "gj" {:silent true})
 (map [:n :x :o] "e" "gk" {:silent true})
 (map [:n :x :o] "i" "l" {:silent true})
+(map [:n :x :o] "<Left>" "<Nop>" {:silent true})
+(map [:n :x :o] "<Down>" "<Nop>" {:silent true})
+(map [:n :x :o] "<Up>" "<Nop>" {:silent true})
+(map [:n :x :o] "<Right>" "<Nop>" {:silent true})
 
 ;; Word movement
 (map [:n :x :o] "l" "b" {:silent true})
@@ -67,8 +71,7 @@
 (map :o "r" "i" {:silent true})
 
 ;; Miscellaneous
-(map [:n :x] "gX" "X" {:silent true})
-(map [:n :x] "gK" "K" {:silent true})
+(map [:n :x] "gk" "K" {:silent true})
 (map [:n :x] "gL" "L" {:silent true})
 (map [:n :x] "N" "<C-d>zz" {:silent true})
 (map [:n :x] "E" "<C-u>zz" {:silent true})
