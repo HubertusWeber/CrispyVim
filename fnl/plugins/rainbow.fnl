@@ -1,6 +1,5 @@
 {1 :HiPhish/rainbow-delimiters.nvim
- :lazy true
- :ft [:fennel :clojure :lua :tex :json]
+ :lazy false
  :config (fn []
            (local rainbow-delimiters (require :rainbow-delimiters))
            (set _G.vim.g.rainbow_delimiters
