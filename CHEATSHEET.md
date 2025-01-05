@@ -191,7 +191,7 @@ Inside explorer:
 - `<leader>sy` Document symbols
 - `<leader>sY` Workspace symbols
 - `<leader>R` Rename symbol
-- `<leader>a` Code action (works in visual mode too)
+- `<leader>!` Code action (works in visual mode too)
 - `gD` Goto declaration
 - `<leader>j` Toggle LSP inlay hints
 - `<leader>L` Start LSP client (usually already done automatically)
@@ -318,6 +318,7 @@ Inside explorer:
 - LTeX: `<leader>L` Toggle grammar/spell checker
 - Nabla: `<leader>.` Toggle nabla popup
 - Notes: `<leader>m` Open `~/Notes/!Home.md`
+- Aerial: `<leader>a` Toggle aerial
 - Lazy: `<leader>l` Open Lazy plugin manager
 
 - `<Esc>` (Normal) Clear search highlight
