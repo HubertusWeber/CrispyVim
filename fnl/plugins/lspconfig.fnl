@@ -50,7 +50,7 @@
                                                         (map "<leader>R"
                                                              _G.vim.lsp.buf.rename
                                                              "Rename")
-                                                        (map "<leader>a"
+                                                        (map "<leader>!"
                                                              _G.vim.lsp.buf.code_action
                                                              "Code action"
                                                              [:n :x])
