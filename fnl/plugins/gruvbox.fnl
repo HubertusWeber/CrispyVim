@@ -8,11 +8,11 @@
              (_G.vim.api.nvim_set_hl 0 "FloatBorder"
                                      {:bg gruvbox.dark0 :fg gruvbox.light0})
              (_G.vim.api.nvim_set_hl 0 "HighlightUndo"
-                                     {:bg gruvbox.bright_aqua
-                                      :fg gruvbox.light1})
+                                     {:bg gruvbox.bright_orange
+                                      :fg gruvbox.dark0})
              (_G.vim.api.nvim_set_hl 0 "HighlightRedo"
-                                     {:bg gruvbox.bright_aqua
-                                      :fg gruvbox.light1})
+                                     {:bg gruvbox.bright_orange
+                                      :fg gruvbox.dark0})
              (_G.vim.api.nvim_set_hl 0 "NeotestPassed"
                                      {:fg gruvbox.bright_green})
              (_G.vim.api.nvim_set_hl 0 "NeotestFailed" {:fg gruvbox.bright_red})
