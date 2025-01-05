@@ -26,6 +26,8 @@
          (set _G.vim.g.conjure#mapping#eval_marked_form "m")
          (set _G.vim.g.conjure#mapping#eval_file "f")
          (set _G.vim.g.conjure#mapping#eval_buf "b"))
+ :config (fn []
+           ((. (require :lazy) :unload) "conjure"))
  :keys [{1 "<leader>E"
          2 "<CMD>ConjureConnect<CR>"
          :desc "Conjure connect"

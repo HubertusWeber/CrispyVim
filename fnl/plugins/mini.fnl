@@ -7,11 +7,6 @@
                                                     :inside_next "rn"
                                                     :around_las "al"
                                                     :inside_last "rl"}})
-         ((. (require :mini.clue) :setup) {:triggers [{:mode :n
-                                                       :keys "<leader>"}
-                                                      {:mode :x
-                                                       :keys "<leader>"}]
-                                           :window {:delay 1000}})
          ((. (require :mini.comment) :setup) {:mappings {:comment_line "<leader>c"
                                                          :comment_visual "<leader>c"
                                                          :textobject "C"}})

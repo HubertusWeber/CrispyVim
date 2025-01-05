@@ -70,9 +70,6 @@
                                                                                    :results_title false
                                                                                    :layout_config {:width 0.8
                                                                                                    :height 0.8}}
-                                                       :grep_string {:previewer false
-                                                                     :prompt_title false
-                                                                     :results_title false}
                                                        :help_tags {:previewer false
                                                                    :prompt_title false
                                                                    :results_title false}
@@ -125,37 +122,28 @@
            (pcall (. (require :telescope) :load_extension) :zoxide)
            (pcall (. (require :telescope) :load_extension) :zotero)
            (pcall (. (require :telescope) :load_extension) :bibtex))
- :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Search help"}
-        {1 "<leader>sk" 2 "<CMD>Telescope keymaps<CR>" :desc "Search keymaps"}
-        {1 "<leader>ss" 2 "<CMD>Telescope find_files<CR>" :desc "Search files"}
-        {1 "<leader>st" 2 "<CMD>Telescope<CR>" :desc "Search telescope"}
-        {1 "<leader>sw"
-         2 "<CMD>Telescope grep_string<CR>"
-         :desc "Search current word"}
-        {1 "<leader>sr"
-         2 "<CMD>Telescope live_grep<CR>"
-         :desc "Search ripgrep"}
-        {1 "<leader>sb" 2 "<CMD>Telescope bibtex<CR>" :desc "Search bibtex"}
-        {1 "<leader>sx"
-         2 "<CMD>Telescope diagnostics<CR>"
-         :desc "Search diagnostics"}
+ :keys [{1 "<leader>sh" 2 "<CMD>Telescope help_tags<CR>" :desc "Help"}
+        {1 "<leader>sk" 2 "<CMD>Telescope keymaps<CR>" :desc "Keymaps"}
+        {1 "<leader>ss" 2 "<CMD>Telescope find_files<CR>" :desc "Files"}
+        {1 "<leader>st" 2 "<CMD>Telescope<CR>" :desc "Telescope"}
+        {1 "<leader>sr" 2 "<CMD>Telescope live_grep<CR>" :desc "Grep"}
+        {1 "<leader>sb" 2 "<CMD>Telescope bibtex<CR>" :desc "Bibtex"}
+        {1 "<leader>sx" 2 "<CMD>Telescope diagnostics<CR>" :desc "Diagnostics"}
         {1 "<leader><leader>"
          2 "<CMD>Telescope oldfiles<CR>"
-         :desc "Open file"}
+         :desc "Recent Files"}
         {1 "<leader>sc"
          2 "<CMD>Telescope find_files cwd=~/.config/nvim<CR>"
-         :desc "Search config file"}
-        {1 "<leader>sz" 2 "<CMD>Telescope zotero<CR>" :desc "Search in zotero"}
-        {1 "<leader>sd"
-         2 "<CMD>Telescope zoxide list<CR>"
-         :desc "Search directory"}
-        {1 "<leader>se" 2 "<CMD>Telescope emoji<CR>" :desc "Search emoji"}
-        {1 "<leader>sj" 2 "<CMD>Telescope buffers<CR>" :desc "Search buffer"}
+         :desc "Config"}
+        {1 "<leader>sz" 2 "<CMD>Telescope zotero<CR>" :desc "Zotero"}
+        {1 "<leader>sd" 2 "<CMD>Telescope zoxide list<CR>" :desc "Directory"}
+        {1 "<leader>se" 2 "<CMD>Telescope emoji<CR>" :desc "Emoji"}
+        {1 "<leader>sj" 2 "<CMD>Telescope buffers<CR>" :desc "Buffer"}
         {1 "<leader>i"
          2 "<CMD>Telescope current_buffer_fuzzy_find<CR>"
          :desc "Search in file"}
-        {1 "<leader>sn" 2 "<CMD>ObsidianQuickSwitch<CR>" :desc "Search note"}
-        {1 "<leader>sm" 2 "<CMD>ObsidianSearch<CR>" :desc "Search in notes"}
+        {1 "<leader>sn" 2 "<CMD>ObsidianQuickSwitch<CR>" :desc "Note"}
+        {1 "<leader>sm" 2 "<CMD>ObsidianSearch<CR>" :desc "Grep notes"}
         {1 "<leader>,"
          2 "<CMD>Telescope lsp_definitions<CR>"
          :desc "Go to definition"}

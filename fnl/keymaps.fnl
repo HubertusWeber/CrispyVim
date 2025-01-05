@@ -78,7 +78,7 @@
 (map :n "<leader>d" "<CMD>bdelete<CR>" {:silent true :desc "Delete buffer"})
 (map :n "<leader>D" "<CMD>bdelete!<CR>" {:silent true :desc "Delete buffer!"})
 (map :n "<leader>n" "<CMD>bnext<CR>" {:silent true :desc "Next buffer"})
-(map :n "<leader>N" "<CMD>bprevious<CR>" {:silent true :desc "Previous buffer"})
+(map :n "<leader>N" "<CMD>bprevious<CR>" {:silent true :desc "Prev buffer"})
 (map :n "<leader>m" "<CMD>e ~/Notes/!Home.md<CR>" {:silent true :desc "Notes"})
 (map :n "<leader>l" "<CMD>Lazy<CR>" {:silent true :desc "Lazy"})
 
@@ -94,7 +94,7 @@
 (map [:n :x] "<leader>q" "<CMD>close<CR>" {:silent true :desc "Close window"})
 (map [:n :x] "<leader>Q" "<CMD>only<CR>" {:silent true :desc "Close others"})
 (map [:n :x] "<leader>w" "<C-w>w" {:silent true :desc "Switch window"})
-(map [:n :x] "<leader>v" "<C-w>r" {:silent true :desc "Rotate windows"})
+(map [:n :x] "<leader>W" "<C-w>r" {:silent true :desc "Rotate windows"})
 (map [:n :x] "M" "<C-w>h" {:silent true})
 (map [:n :x] "I" "<C-w>l" {:silent true})
 (map [:n :x] "<C-n>" "<C-w>j" {:silent true})
