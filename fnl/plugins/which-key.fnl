@@ -2,6 +2,7 @@
  :lazy true
  :event :VeryLazy
  :opts {:delay 0
+        :preset "helix"
         :triggers [{1 "<leader>" :mode :nxso}]
         :plugins {:marks false
                   :registers false
@@ -16,9 +17,11 @@
         :icons {:mappings false :group ""}
         :spec [{1 "<leader>x" :group "Trouble"}
                {1 "<leader>g" :group "Git"}
+               {1 "<leader>i" :group "Chainsaw"}
                {1 "<leader>s" :group "Search"}
                {1 "<leader>e" :group "Conjure"}
                {1 "<leader>r" :group "Rust"}
                {1 "<leader>z" :desc "Split or join"}]
+        :win {:no_overlap false}
         :show_keys false
         :show_help false}}

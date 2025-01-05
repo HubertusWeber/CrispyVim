@@ -200,7 +200,6 @@ Inside explorer:
 ## 🌸 Telescope
 
 - `<leader><leader>` Recent files
-- `<leader>i` Search in file
 - `<leader>,` Go to definition
 - `<leader>b` Obsidian Backlinks
 
@@ -209,6 +208,7 @@ Inside explorer:
 - `h` Search help tags
 - `k` Search keymaps
 - `s` Search files
+- `i` Search current buffer
 - `t` Telescope UI
 - `w` Search current word
 - `r` Live grep
@@ -242,6 +242,23 @@ Inside explorer:
 - `e` Toggle LSP diagnostics
 - `l` Toggle location list
 - `i` Toggle quickfix list
+
+
+## 🪚 Chainsaw
+
+Prefix: <leader>i
+
+- `v` Insert variable log
+- `o` Insert object log
+- `y` Insert type log
+- `a` Insert assert log
+- `e` Insert emoji log
+- `m` Insert message log
+- `t` Insert time log
+- `d` Insert debug log
+- `s` Insert stacktrace log
+- `c` Clear logs
+- `r` Remove all logs
 
 
 ## 🎢 Conjure
@@ -319,6 +336,7 @@ Inside explorer:
 - Nabla: `<leader>.` Toggle nabla popup
 - Notes: `<leader>m` Open `~/Notes/!Home.md`
 - Aerial: `<leader>a` Toggle aerial
+- Toggler: `<leader>.` Invert
 - Lazy: `<leader>l` Open Lazy plugin manager
 
 - `<Esc>` (Normal) Clear search highlight
