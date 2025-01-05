@@ -128,13 +128,15 @@
 - `<leader>t` Toggle fold
 
 
-## 🎃 Gitsigns
+## 🎃 Git
 
 - `[c` Previous hunk
 - `]c` Next hunk
 
 **Prefix:** `<leader>g`
 
+- `g` Neogit
+- `c` Commit
 - `s` Stage hunk
 - `r` Reset hunk
 - `S` Stage buffer
