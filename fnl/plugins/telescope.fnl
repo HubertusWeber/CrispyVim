@@ -139,9 +139,9 @@
         {1 "<leader>sd" 2 "<CMD>Telescope zoxide list<CR>" :desc "Directory"}
         {1 "<leader>se" 2 "<CMD>Telescope emoji<CR>" :desc "Emoji"}
         {1 "<leader>sj" 2 "<CMD>Telescope buffers<CR>" :desc "Buffer"}
-        {1 "<leader>i"
+        {1 "<leader>si"
          2 "<CMD>Telescope current_buffer_fuzzy_find<CR>"
-         :desc "Search in file"}
+         :desc "Current buffer"}
         {1 "<leader>sn" 2 "<CMD>ObsidianQuickSwitch<CR>" :desc "Note"}
         {1 "<leader>sm" 2 "<CMD>ObsidianSearch<CR>" :desc "Grep notes"}
         {1 "<leader>,"
