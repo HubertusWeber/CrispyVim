@@ -47,7 +47,7 @@
 ;; Minimal number of screen lines to keep above and below the cursor
 (set vim.opt.scrolloff 10)
 
-;; Set tapstop to four like a normal f*cking person
+;; Set tapstop to four
 (set vim.opt.tabstop 4)
 
 ;; Set one global statusline
@@ -66,5 +66,4 @@
 (set vim.opt.shada "'4096,<0,s4096,h,:4096")
 
 ;; Set up options in case of GUI front-end
-(set vim.opt.guifont "Hack Nerd Font:h16")
-(set vim.opt.linespace 4)
+(set vim.opt.guifont "Hack Nerd Font:h21")
