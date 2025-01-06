@@ -333,7 +333,7 @@ Prefix: <leader>i
 - mini.comment: `<leader>c` Comment line
 - mini.splitjoin: `<leader>z` Toggle split/join lines
 - LTeX: `<leader>L` Toggle grammar/spell checker
-- Nabla: `<leader>.` Toggle nabla popup
+- Nabla: `<leader>v` Toggle nabla popup
 - Notes: `<leader>m` Open `~/Notes/!Home.md`
 - Aerial: `<leader>a` Toggle aerial
 - Aerial: `<leader>A` Toggle aerial nav
