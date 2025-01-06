@@ -336,6 +336,7 @@ Prefix: <leader>i
 - Nabla: `<leader>.` Toggle nabla popup
 - Notes: `<leader>m` Open `~/Notes/!Home.md`
 - Aerial: `<leader>a` Toggle aerial
+- Aerial: `<leader>A` Toggle aerial nav
 - Toggler: `<leader>.` Invert
 - Lazy: `<leader>l` Open Lazy plugin manager
 
