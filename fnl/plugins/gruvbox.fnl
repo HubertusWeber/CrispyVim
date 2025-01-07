@@ -5,6 +5,8 @@
  :config (fn []
            (_G.vim.cmd.colorscheme :gruvbox)
            (let [gruvbox (. (require :gruvbox) :palette)]
+             (_G.vim.api.nvim_set_hl 0 "WhichKeyNormal" {:bg gruvbox.dark0})
+             (_G.vim.api.nvim_set_hl 0 "CursorLine" {:bg gruvbox.dark0})
              (_G.vim.api.nvim_set_hl 0 "FloatBorder"
                                      {:bg gruvbox.dark0 :fg gruvbox.light0})
              (_G.vim.api.nvim_set_hl 0 "HighlightUndo"
