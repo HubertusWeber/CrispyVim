@@ -2,7 +2,7 @@
  :lazy true
  :event :BufWritePre
  :cmd :ConformInfo
- :keys [{1 "<leader>o"
+ :keys [{1 "<leader>F"
          2 (fn []
              ((. (require :conform) :format) {:async true
                                               :lsp_format :fallback}))
