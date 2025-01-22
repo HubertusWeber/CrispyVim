@@ -2,7 +2,7 @@
  :lazy true
  :event :VeryLazy
  :opts {:delay 0
-        :preset "helix"
+        :preset "modern"
         :triggers [{1 "<leader>" :mode :nxso}]
         :plugins {:marks false
                   :registers false
