@@ -1,6 +1,6 @@
 {1 :neovim/nvim-lspconfig
  :lazy true
- :ft [:lua :tex :clojure :fennel]
+ :ft [:c :lua :tex :clojure :fennel :haskell :zig :zir]
  :dependencies [{1 :nvimdev/lspsaga.nvim
                  :lazy true
                  :opts {:lightbulb {:enable false}
@@ -98,10 +98,14 @@
                 {:dynamicRegistration false :lineFoldingOnly true})
            (let [lspconfig (require :lspconfig)]
              (lspconfig.lua_ls.setup {:capabilities capa})
+             (lspconfig.clangd.setup {:capabilities capa
+                                      :single_file_support true})
              (lspconfig.clojure_lsp.setup {:capabilities capa
                                            :single_file_support true})
              (lspconfig.fennel_ls.setup {:capabilities capa
                                          :single_file_support true})
+             (lspconfig.hls.setup {:capabilities capa
+                                   :single_file_support true})
              (lspconfig.texlab.setup {:capabilities capa
                                       :settings {:texlab {:binary {:path "/opt/homebrew/bin/texlab"}
                                                           :build {:args [:-pdf
@@ -109,7 +113,9 @@
                                                                          :-output-directory=/Users/hubertusweber/Output
                                                                          :-synctex=0
                                                                          :%f]
-                                                                  :onSave true}}}}))
+                                                                  :onSave true}}}})
+             (lspconfig.zls.setup {:capabilities capa
+                                   :single_file_support true}))
            (_G.vim.keymap.set :n "<leader>L"
                               (fn []
                                 (let [active-clients (_G.vim.lsp.get_active_clients {:name :ltex})]
