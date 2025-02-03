@@ -110,7 +110,7 @@
 - `<leader>q` Close window
 - `<leader>Q` Close other windows
 - `<leader>w` Switch window
-- `<leader>v` Rotate windows
+- `<leader>W` Rotate windows
 - `M` Move focus to left window
 - `I` Move focus to right window
 - `<C-n>` Focus down window
@@ -329,7 +329,8 @@ Prefix: <leader>i
 - PaperPlane: `<leader>p` Open PDF
 - Snipe: `,` Open snipe menu
 - Noice: `;` Noice UI
-- Conform: `<leader>o` Format buffer
+- Conform: `<leader>F` Format buffer
+- Copilot: `<leader>o` Toggle copilot
 - mini.comment: `<leader>c` Comment line
 - mini.splitjoin: `<leader>z` Toggle split/join lines
 - LTeX: `<leader>L` Toggle grammar/spell checker
