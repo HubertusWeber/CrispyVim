@@ -110,7 +110,7 @@
                                       :settings {:texlab {:binary {:path "/opt/homebrew/bin/texlab"}
                                                           :build {:args [:-pdf
                                                                          :-interaction=nonstopmode
-                                                                         :-output-directory=/Users/hubertusweber/Output
+                                                                         :-output-directory=/Users/hubertusweber/Output/tex
                                                                          :-synctex=0
                                                                          :%f]
                                                                   :onSave true}}}})
