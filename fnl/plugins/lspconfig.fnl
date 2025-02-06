@@ -115,26 +115,4 @@
                                                                          :%f]
                                                                   :onSave true}}}})
              (lspconfig.zls.setup {:capabilities capa
-                                   :single_file_support true}))
-           (_G.vim.keymap.set :n "<leader>L"
-                              (fn []
-                                (let [active-clients (_G.vim.lsp.get_active_clients {:name :ltex})]
-                                  (if (> (length active-clients) 0)
-                                      (each [_ client (ipairs active-clients)]
-                                        (client:stop)
-                                        (_G.vim.notify "LTeX language server stopped"
-                                                       _G.vim.log.levels.INFO))
-                                      (let [ltex (require :lspconfig)]
-                                        (ltex.ltex.setup {:capabilities capa
-                                                          :settings {:ltex {:enabled true
-                                                                            :additionalRules {:enablePickyRules true
-                                                                                              :motherTongue :de-DE}
-                                                                            :languageToolHttpServerUri (os.getenv "LANGUAGETOOL_HTTP_SERVER_URI")
-                                                                            :languageToolOrg {:username (os.getenv "LANGUAGETOOL_ORG_USERNAME")
-                                                                                              :apiKey (os.getenv "LANGUAGETOOL_ORG_APIKEY")}
-                                                                            :ltex-ls {:logLevel :severe}
-                                                                            :checkFrequency :save}}})
-                                        (ltex.ltex.launch)
-                                        (_G.vim.notify "LTeX language server started"
-                                                       _G.vim.log.levels.INFO)))))
-                              {:desc "Toggle LTeX" :silent true}))}
+                                   :single_file_support true})))}

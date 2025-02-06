@@ -194,7 +194,6 @@ Inside explorer:
 - `<leader>!` Code action (works in visual mode too)
 - `gD` Goto declaration
 - `<leader>j` Toggle LSP inlay hints
-- `<leader>L` Start LSP client (usually already done automatically)
 
 
 ## 🌸 Telescope

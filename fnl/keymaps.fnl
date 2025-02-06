@@ -104,13 +104,6 @@
 (map [:n :x] "<S-Up>" "<C-w>-" {:silent true})
 (map [:n :x] "<S-Right>" "<C-w>>" {:silent true})
 
-;; Load nvim-lspconfig (this keybind is overwritten once the plugin is loaded)
-(map [:n :x] "<leader>L"
-     (fn []
-       ((. (require :lazy) :load) {:plugins [:nvim-lspconfig]})
-       (_G.vim.notify "LSP loaded" _G.vim.log.levels.INFO))
-     {:silent true :desc "Load LSP"})
-
 ;; Highlight when yanking text
 (_G.vim.api.nvim_create_autocmd :TextYankPost
                                 {:desc "Highlight when yanking text"
