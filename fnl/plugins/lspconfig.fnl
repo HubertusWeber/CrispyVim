@@ -1,11 +1,7 @@
 {1 :neovim/nvim-lspconfig
  :lazy true
  :ft [:c :lua :tex :clojure :fennel :haskell :zig :zir]
- :dependencies [{1 :nvimdev/lspsaga.nvim
-                 :lazy true
-                 :opts {:lightbulb {:enable false}
-                        :symbol_in_winbar {:enable false}}}
-                :hrsh7th/cmp-nvim-lsp]
+ :dependencies [:hrsh7th/cmp-nvim-lsp]
  :config (fn []
            (_G.vim.api.nvim_create_autocmd :LspAttach
                                            {:group (_G.vim.api.nvim_create_augroup :kickstart-lsp-attach
