@@ -330,8 +330,7 @@ Prefix: <leader>i
 - Snipe: `<` Open snipe menu
 - Snipe-LSP: `,` Open snipe-lsp menu
 - Noice: `;` Noice UI
-- Conform: `<leader>F` Format buffer
-- Copilot: `<leader>o` Toggle copilot
+- Conform: `<leader>o` Format buffer
 - mini.comment: `<leader>c` Comment line
 - mini.splitjoin: `<leader>z` Toggle split/join lines
 - LTeX: `<leader>L` Toggle grammar/spell checker
