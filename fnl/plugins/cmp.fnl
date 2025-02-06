@@ -11,16 +11,16 @@
                  luasnip (require :luasnip)
                  vscode-loader (require :luasnip.loaders.from_vscode)]
              (vscode-loader:lazy_load)
-             (cmp.setup {:completion {:autocomplete false
+             (cmp.setup {:completion {:autocomplete true
                                       :completeopt "menu,menuone,noinsert"}
                          :snippet {:expand (fn [args]
                                              (luasnip.lsp_expand args.body))}
                          :mapping (cmp.mapping.preset.insert {"<CR>" (cmp.mapping.confirm {:select true})
                                                               "<Tab>" (cmp.mapping.select_next_item)
-                                                              "<C-Tab>" (cmp.mapping.select_prev_item)
+                                                              "<S-Tab>" (cmp.mapping.select_prev_item)
                                                               "<Up>" (cmp.mapping.scroll_docs -4)
                                                               "<Down>" (cmp.mapping.scroll_docs 4)
-                                                              "<S-Tab>" (cmp.mapping.complete {})})
+                                                              "<C-Tab>" (cmp.mapping.complete {})})
                          :sources [{:name :luasnip}
                                    {:name :nvim_lsp}
                                    {:name :path}]})))}
