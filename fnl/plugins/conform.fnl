@@ -9,9 +9,10 @@
          :desc "Format buffer"}]
  :opts {:notify_on_error false
         :format_on_save (fn []
-                          {:timeout_ms 250 :lsp_format :fallback})
+                          {:timeout_ms 2500 :lsp_format :fallback})
         :formatters_by_ft {:lua [:stylua]
                            :python [:black]
                            :fennel [:fnlfmt]
+                           :ruby [:standardrb]
                            ;; :javascript [:prettierd :prettier :stop_after_first true]
                            }}}

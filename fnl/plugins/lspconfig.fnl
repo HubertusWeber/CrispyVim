@@ -1,6 +1,6 @@
 {1 :neovim/nvim-lspconfig
  :lazy true
- :ft [:c :lua :tex :clojure :fennel :haskell :zig :zir]
+ :ft [:c :lua :tex :clojure :fennel :haskell :ruby :zig :zir]
  :dependencies [:hrsh7th/cmp-nvim-lsp]
  :config (fn []
            (_G.vim.api.nvim_create_autocmd :LspAttach
@@ -102,6 +102,10 @@
                                          :single_file_support true})
              (lspconfig.hls.setup {:capabilities capa
                                    :single_file_support true})
+             (lspconfig.ruby_lsp.setup {:capabilities capa
+                                        :single_file_support true
+                                        :formatter "standard"
+                                        :linters ["standard"]})
              (lspconfig.texlab.setup {:capabilities capa
                                       :settings {:texlab {:binary {:path "/opt/homebrew/bin/texlab"}
                                                           :build {:args [:-pdf
