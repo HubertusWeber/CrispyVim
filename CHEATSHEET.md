@@ -326,8 +326,8 @@ Prefix: <leader>i
 ## 🌴 Miscellaneous
 
 - PaperPlane: `<leader>p` Open PDF
-- Snipe: `<` Open snipe menu
-- Snipe-LSP: `,` Open snipe-lsp menu
+- Snipe: `,` Open snipe menu
+- Snipe-LSP: `<` Open snipe-lsp menu
 - Noice: `;` Noice UI
 - Conform: `<leader>o` Format buffer
 - mini.comment: `<leader>c` Comment line

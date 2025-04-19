@@ -1,6 +1,6 @@
 [{1 :leath-dub/snipe.nvim
   :lazy true
-  :keys [{1 "<"
+  :keys [{1 ","
           2 (fn []
               ((. (require :snipe) :open_buffer_menu)))}]
   :opts {:ui {:open_win_override {:title "" :border :single}
@@ -16,4 +16,4 @@
   :lazy true
   :dependencies :leath-dub/snipe.nvim
   :opts {}
-  :keys [{1 "," 2 "<CMD>SnipeLspSymbols<CR>"}]}]
+  :keys [{1 "<" 2 "<CMD>SnipeLspSymbols<CR>"}]}]
