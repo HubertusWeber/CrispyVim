@@ -11,7 +11,8 @@
                  luasnip (require :luasnip)
                  vscode-loader (require :luasnip.loaders.from_vscode)]
              (vscode-loader:lazy_load)
-             (cmp.setup {:completion {:completeopt "menu,menuone,noinsert"}
+             (cmp.setup {:completion {:autocomplete false
+                                      :completeopt "menu,menuone,noinsert"}
                          :snippet {:expand (fn [args]
                                              (luasnip.lsp_expand args.body))}
                          :mapping (cmp.mapping.preset.insert {"<CR>" (cmp.mapping.confirm {:select true})
