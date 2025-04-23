@@ -11,6 +11,7 @@
         :format_on_save (fn []
                           {:timeout_ms 2500 :lsp_format :fallback})
         :formatters_by_ft {:lua [:stylua]
+                           :clojure [:cljfmt]
                            :python [:black]
                            :fennel [:fnlfmt]
                            :ruby [:standardrb]
