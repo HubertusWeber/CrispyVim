@@ -80,10 +80,6 @@
                                                                  (fn []
                                                                    (_G.vim.lsp.inlay_hint.enable (not (_G.vim.lsp.inlay_hint.is_enabled {:bufnr event.buf}))))
                                                                  "Toggle inlay hints"))))})
-           (let [signs {:Error "" :Warn "" :Hint "" :Info ""}]
-             (each [type icon (pairs signs)]
-               (let [hl (.. :DiagnosticSign type)]
-                 (_G.vim.fn.sign_define hl {:text icon :texthl hl :numhl hl}))))
            (var capa (_G.vim.lsp.protocol.make_client_capabilities))
            (set capa.textDocument.foldingRange
                 {:dynamicRegistration false :lineFoldingOnly true})
