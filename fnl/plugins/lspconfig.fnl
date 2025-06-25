@@ -103,6 +103,7 @@
              (lspconfig.texlab.setup {:capabilities capa
                                       :settings {:texlab {:binary {:path "/opt/homebrew/bin/texlab"}
                                                           :build {:args [:-pdf
+                                                                         :-xelatex
                                                                          :-interaction=nonstopmode
                                                                          :-output-directory=/Users/hubertusweber/Output/tex
                                                                          :-synctex=0
