@@ -1,6 +1,6 @@
 {1 :neovim/nvim-lspconfig
  :lazy true
- :ft [:c :lua :tex :clojure :elixir :fennel :dart :haskell :ruby :zig :zir]
+ :ft [:c :lua :tex :clojure :elixir :fennel :swift :ruby :zig :zir]
  :config (fn []
            (_G.vim.api.nvim_create_autocmd :LspAttach
                                            {:group (_G.vim.api.nvim_create_augroup :kickstart-lsp-attach
@@ -91,8 +91,8 @@
                                            :single_file_support true})
              (lspconfig.fennel_ls.setup {:capabilities capa
                                          :single_file_support true})
-             (lspconfig.dartls.setup {:capabilities capa
-                                      :single_file_support true})
+             (lspconfig.sourcekit.setup {:capabilities capa
+                                         :single_file_support true})
              (lspconfig.elixirls.setup {:capabilities capa
                                         :single_file_support true
                                         :cmd ["/opt/homebrew/bin/elixir-ls"]})
