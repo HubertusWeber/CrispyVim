@@ -1,1 +1,1 @@
-{1 :gpanders/nvim-parinfer}
+{1 :gpanders/nvim-parinfer :lazy true :ft [:clojure :fennel]}
