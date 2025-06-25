@@ -50,6 +50,18 @@ vim.opt.runtimepath:prepend({ hotpot_path, lazy_path })
 vim.loader.enable()
 
 --
+-- -------------------------------------
+-- Autocmd to disable comment on newline
+-- -------------------------------------
+--
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "*",
+	callback = function()
+		vim.opt_local.formatoptions:remove({ "r", "o" })
+	end,
+})
+
+--
 -- ------------------------------------------
 -- Load the actual conf written in Fennel
 -- ------------------------------------------
