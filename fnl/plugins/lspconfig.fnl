@@ -80,7 +80,7 @@
                                                                  (fn []
                                                                    (_G.vim.lsp.inlay_hint.enable (not (_G.vim.lsp.inlay_hint.is_enabled {:bufnr event.buf}))))
                                                                  "Toggle inlay hints"))))})
-           (var capa (_G.vim.lsp.protocol.make_client_capabilities))
+           (local capa (_G.vim.lsp.protocol.make_client_capabilities))
            (set capa.textDocument.foldingRange
                 {:dynamicRegistration false :lineFoldingOnly true})
            (let [lspconfig (require :lspconfig)]
