@@ -5,9 +5,7 @@
            (set _G.vim.g.rainbow_delimiters
                 {:strategy {"" rainbow-delimiters.strategy.global}
                  :query {"" "rainbow-delimiters"}
-                 ; Uncomment when using nord colors.
-                 ; :highlight [:RainbowDelimiterCyan
-                 ;             :RainbowDelimiterGreen
-                 ;             :RainbowDelimiterWhite
-                 ;             :RainbowDelimiterBlue]
-                 }))}
+                 :highlight [:RainbowDelimiterCyan
+                             :RainbowDelimiterGreen
+                             :RainbowDelimiterWhite
+                             :RainbowDelimiterBlue]}))}
