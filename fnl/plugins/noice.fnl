@@ -1,7 +1,7 @@
 {1 :folke/noice.nvim
  :lazy true
  :event :VeryLazy
- :opts {:cmdline {:format {:cmdline {:icon "" :title ""}
+ :opts {:cmdline {:format {:cmdline {:icon "λ" :title ""}
                            :search_down {:icon "Σ" :title ""}
                            :search_up {:icon "Γ" :title ""}}}
         :views {:cmdline_popup {:border {:style "single" :text {:top ""}}}}
