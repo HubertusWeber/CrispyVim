@@ -70,6 +70,11 @@
 (map [:n :x :o] "K" "N" {:silent true})
 (map :o "r" "i" {:silent true})
 
+;; Indenting back and forth
+(map [:n :x] "<Tab>" ">>" {:silent true})
+(map [:n :x] "<S-Tab>" "<<" {:silent true})
+(map [:n :x] "<BS>" "<<" {:silent true})
+
 ;; Miscellaneous
 (map [:n :x] "gk" "K" {:silent true})
 (map [:n :x] "gL" "L" {:silent true})
